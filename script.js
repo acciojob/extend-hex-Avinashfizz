@@ -1,13 +1,16 @@
 const extendHex = (shortHex) => {
   // write your code here
 
-  var i = shortHex.length()-3;
-  var isCapital = false;
-	for(let j=0; j<shortHex.length()){
-		if(shortHex[j]>=65 && shortHex[j]<=90)isCapital=true;
-		j++;
+  let i = shortHex.length()-3;
+  let isCapital = false; 
+  let ans ="#";
+	for( i=0; i<shortHex.length){
+		if(shortHex[i].charAtCode()>=65 && shortHex[i].charAtCode()<=90)isCapital=true;
+		
+		ans+=shortHex[i]+shortHex[i];
+		i++;
 	}
-  var ans="#"+"shortHex[i]"+"shortHex[i]"+"shortHex[i+1]"+"shortHex[i+1]"+"shortHex[i+2]"+"shortHex[i+2]";
+  
 	if(isCapital===true)ans=ans.toUpperCase();
 	return ans;
 };
