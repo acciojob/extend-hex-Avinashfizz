@@ -6,6 +6,7 @@ const extendHex = (shortHex) => {
   let ans = "#";
 	while(i<shortHex.length){
 		let A=shortHex[i].charCodeAt(0);
+		
 		if(A>=65 && A<=90){
 			isCapital=true;
 		}
@@ -15,10 +16,10 @@ const extendHex = (shortHex) => {
 		i++;
 	}
   
-	if(isCapital==true)ans=ans.toUpperCase();
-	return ans;
+	
+	return isCapital ? ans.toUpperCase() : ans;
 };
 
 // Do not change the code below.
-const shortHex = prompt("Enter Short Hex.");
+//const shortHex = prompt("Enter Short Hex.");
 alert(extendHex(shortHex));
