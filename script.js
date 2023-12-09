@@ -1,8 +1,8 @@
 const extendHex = (shortHex) => {
   // write your code here
 
-  let i = shortHex.length()-3;
-  let isCapital = false; 
+  let i = shortHex.length()-3, isCapital = false; 
+
   let ans ="#";
 	while(i<shortHex.length){
 		let A=shortHex[i].charCodeAt();
