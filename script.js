@@ -3,10 +3,13 @@ const extendHex = (shortHex) => {
 
   let i = shortHex.length()-3, isCapital = false; 
 
-  let ans ="#";
+  let ans = "#";
 	while(i<shortHex.length){
-		let A=shortHex[i].charCodeAt();
-		if(A>=65 && A<=90)isCapital=true;
+		let A=shortHex[i].charCodeAt(0);
+		if(A>=65 && A<=90){
+			isCapital=true;
+		}
+			
 		
 		ans+=shortHex[i]+shortHex[i];
 		i++;
