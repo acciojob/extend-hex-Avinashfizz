@@ -11,11 +11,11 @@ const extendHex = (shortHex) => {
 		}
 			
 		
-		ans+=shortHex[i]+shortHex[i];
+		ans += shortHex[i] + shortHex[i];
 		i++;
 	}
   
-	if(isCapital===true)ans=ans.toUpperCase();
+	if(isCapital==true)ans=ans.toUpperCase();
 	return ans;
 };
 
