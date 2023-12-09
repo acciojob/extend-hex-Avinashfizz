@@ -5,7 +5,7 @@ const extendHex = (shortHex) => {
 
   let ans = "#";
 	while(i<shortHex.length){
-		let A=shortHex[i].charCodeAt(0);
+		let A=shortHex[i].charCodeAt();
 		
 		if(A>=65 && A<=90){
 			isCapital=true;
